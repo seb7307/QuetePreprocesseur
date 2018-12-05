@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "font-titles";
+    src: url('images/anicm___.ttf');
+}
+@font-face {
+    font-family: "font-text";
+    src: url('images/partybusiness.ttf');
+}
+@font-face {
+    font-family: "font-encadrement-titres";
+    src: url('images/tnganbi.ttf');
+}
+
+
+p, h5
+{
+    font-family: "font-text", Helvetica, Arial, sans-serif;
+}
+p
+{
+    font-size: 1.8vw;
+}
+
+h1, h2, h3, h4, header
+{
+    font-family: "font-titles", Helvetica, Arial, sans-serif;
+}
+
+h2
+{
+    font-size: 2vw;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+h5
+{
+    font-size: 2vw;
+}
+.truc
+{
+    color: #ff6600;
+    font-family: "font-encadrement-titres", Helvetica, Arial, sans-serif;
+
+}
+/*nav bar*/
+.navbar
+{
+    background-color: #ff6600;
+    color: white !important
+}
+.navbar-nav
+{
+    margin-left: 57%;
+}
+.nav-item
+{
+    color: white;
+    margin-left: 5px;
+    border-right: solid white 1px;
+}
+.navbar-toggler-icon
+{
+    font-size: 2vw;
+    color: white;
+}
+
+/*footer*/
+.footer
+{
+    background-color: #ff6600;
+    font-size: 1.5vw;
+    margin-bottom: 0;
+}
+.col-3
+{
+    padding-left: 10%;
+}
+.col-6
+{
+    padding-left: 20%;
+}

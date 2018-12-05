@@ -1,0 +1,67 @@
+$font-stack:    "font-text", Helvetica, Arial, sans-serif;
+$primary-color: #333;
+$light-bg-img: url("images/bg_light.png");
+$orange:#ff6600;
+$black: black;
+$yellow: #fcca01;
+
+
+@mixin ring($color, $width, $height,$border-size, $shadow-size){
+
+    background:none;
+    border-radius:50%;
+    width: $width;
+    height:$height;
+    border:$border-size solid $color;
+    box-shadow: inset $shadow-size $shadow-size $shadow-size darken($color, 10), $shadow-size $shadow-size $shadow-size darken($color, 10);
+
+}
+
+
+body {
+    font: 100% $font-stack;
+    background-image: $light-bg-img;
+}
+
+.row2
+{
+    height: 12vw;
+    margin: 0 auto;
+    padding-top: 5vw;
+    justify-content: center;
+
+}
+.row1
+{
+    padding-top: 5%;
+    justify-content: center;
+}
+.text1
+{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.ring
+{
+    align-items: center;
+}
+
+.ringOrange
+{
+@include ring($orange, 60px, 60px, 6px, 3px);
+    padding: 10px;
+}
+.ringYellow
+{
+@include ring($yellow, 150px, 150px, 15px, 6px);
+    padding: 10px;
+}
+
+@for $i from 1 through 6
+{
+    .#{ringBlack}#{$i}
+    {
+    @include ring($black, $i*25px, $i*25px, $i + 4px, 2px);
+        margin-right: -$i*10px;
+    }
+}
